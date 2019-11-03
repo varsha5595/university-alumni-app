@@ -1,0 +1,22 @@
+
+
+<form class = "my-form" >
+<h2 mat-dialog-title>Thanks for adding a new job!!!</h2>
+
+<mat-dialog-content class = "dialog">
+    <mat-form-field>
+        <input matInput name = "nameOfCompany" placeholder="Company Name" [(ngModel)] = "nameOfCompany" required>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput name = "position" placeholder="Position" [(ngModel)] = "position" required>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput name = "logo" placeholder="Logo" [(ngModel)] = "logo">
+    </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button" (click)="onClose($event)">Close</button>
+    <button class="mat-raised-button mat-primary" (click)="addJob(nameOfCompany, position, logo)" data-dismiss="Submit">Submit</button>
+</mat-dialog-actions>
+</form>

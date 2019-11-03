@@ -1,0 +1,27 @@
+<mat-card class="main">
+  <mat-card-header class = "main-card-header">
+    <mat-card-title>Jobs Available</mat-card-title>
+    <!-- <li> -->
+    <button mat-raised-button (click)="openDialog()"><mat-icon> add_circle_outline</mat-icon>New Job</button>
+    <!-- </li> -->
+  </mat-card-header>
+  <mat-card-content class="main-card-content">
+    <mat-card *ngFor="let data of card" class="job-listing">
+      <mat-card-header>
+        <div mat-card-avatar><img src= "{{data.logo}}"/></div>
+        <mat-card-title class="card-header">{{ data.nameOfCompany }}</mat-card-title>
+        <mat-card-subtitle class = "card-header">{{ data.position }}</mat-card-subtitle>
+        <div class="spacer"></div>
+        <p>Posted by: {{ data.name }}</p>
+      </mat-card-header>
+
+      <mat-card-content>
+          Posted on: {{ data.datePosted | date }}
+          <div class="spacer"></div>
+          <button mat-raised-button class= "button">Apply</button>
+      </mat-card-content>
+
+    </mat-card>
+  </mat-card-content>
+</mat-card>
+

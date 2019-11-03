@@ -1,0 +1,68 @@
+.job-listing{
+  display: flex;
+  flex-direction: column;
+  border: 0.5px;
+  max-width: 500px;
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
+  column-gap: 30p;
+ }
+
+ .main{
+   max-width: 700px;
+   display: flex;
+   align-self: center;
+   flex-direction: column;
+   margin-left: 35%;
+ }
+
+ .main-card-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+ }
+
+ .card-header{
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+ }
+
+ .main-card-header{
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+ }
+
+ .spacer {
+   flex: 1;
+ }
+
+ mat-card-actions {
+  display: inline-block;
+  align-self: flex-end;
+ }
+
+ mat-card-content {
+   padding-left: auto;
+   display: flex;
+   flex-direction: row;
+   color: grey;
+ }
+
+ mat-card img{
+  -o-object-fit: cover;
+  // object-fit: cover; /*this makes de image in src fit to the size of specified below*/
+  width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 100%;
+}
+
+.button{
+  // position: relative;
+	color: #ffffff;
+	text-align: center;
+	background-color: #305dbc;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
